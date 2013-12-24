@@ -15,6 +15,6 @@ catch(Exception $e)
 if ($payload->ref === 'refs/heads/master')
 {
   // path to your site deployment script
-  $result = exec('./build.sh');
-	file_put_contents('github.txt', print_r($result), FILE_APPEND);
+  exec('./build.sh', $output);
+	file_put_contents('github.txt', print_r($output, true), FILE_APPEND);
 }
