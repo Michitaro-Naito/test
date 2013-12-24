@@ -15,6 +15,6 @@ file_put_contents('github.txt', print_r($payload, TRUE), FILE_APPEND);
 if ($payload->ref === 'refs/heads/master')
 {
   // path to your site deployment script
-  exec('./build.sh', $output);
+  exec('git pull', $output);
 	file_put_contents('github.txt', print_r($output, true), FILE_APPEND);
 }
