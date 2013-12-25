@@ -7,6 +7,8 @@ Foo
 
 This line is added by M.N.-debug!
 
+One more line.
+
 - [ ] normal **formatting**, @mentions, #1234 refs
 - [ ] incomplete
 - [x] completed
